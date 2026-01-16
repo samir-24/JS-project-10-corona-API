@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>COVID-19 Global Dashboard</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+<nav class="top-bar">
+    <h1>COVID-19 Tracker</h1>
+    <button id="refreshBtn">Update</button>
+</nav>
+
+<main class="dashboard">
+
+    <div id="loading" class="loading">Fetching latest data...</div>
+    <div id="error" class="error"></div>
+
+    <div class="cards" id="cards" style="display:none;">
+
+        <article class="card confirmed">
+            <span class="label">Total Cases</span>
+            <h2 id="confirmed">0</h2>
+        </article>
+
+        <article class="card recovered">
+            <span class="label">Recovered</span>
+            <h2 id="recovered">0</h2>
+        </article>
+
+        <article class="card deaths">
+            <span class="label">Deaths</span>
+            <h2 id="deaths">0</h2>
+        </article>
+
+    </div>
+
+</main>
+
+<footer>
+    <p>Live data from public health sources</p>
+</footer>
+
+<script src="./assets/js/script.js"></script>
+</body>
+</html>
